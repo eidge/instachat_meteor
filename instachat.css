@@ -1,0 +1,35 @@
+body{
+	background-color: black;
+	font-family: 'VT323', cursive;
+	color: white;
+
+	font-size: 1.2em;
+}
+
+#main_container{
+	width: 790px;
+	margin: auto;
+
+	overflow: hidden;
+}
+
+#main_container p{
+	width: 100%;
+}
+
+p strong {
+	font-weight: normal;
+	color: green;
+	font-size: 1.2em;
+}
+
+
+span {
+	outline: 0;
+	border-style: none;
+
+	font-family: 'VT323', cursive;
+	color: white;
+
+	font-size: 1.2em;
+}

@@ -1,0 +1,43 @@
+<head>
+	<title>InstaChat - An hacker like chat</title>
+	<link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div id = "main_container">
+		{{> chat_room }}
+		{{> main_input }}
+	</div>
+</body>
+	
+<template name = "chat_room">
+	{{#each conversation_lines}}
+		{{> line}}
+	{{/each}}
+</template>
+
+<template name = "line">
+	<p class = "ChatLine"><strong>{{ this.User }}@{{ this.RoomName }}:~$</strong> {{ this.Line }}</p>
+</template>
+
+<template name = "main_input">
+	{{> input }}
+	<p class = "ChatLine">
+		<strong>{{ current_user }}@{{ room }}:~$</strong><span contenteditable="true" id = "chat_input"></span>
+	</p>
+</template>
+
+
+<template name = "input">
+	{{#each buffer}}
+		{{#if this.Buffer}}
+			<p class = "ChatLine" id = "buffer"><strong>{{ getUserById this.UserId }}@{{ this.RoomName }}:~$</strong> {{this.Buffer}}</p>
+		{{/if}}
+	{{/each}}
+</template>
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+TODO:
+	Solve timestamp discrepancies, because they rely on local time! https://github.com/oortcloud/unofficial-meteor-faq //ctrl+f timestamp
+	Criar mecanismo para as rooms.
+	Mensagens de sucesso e com a usage para os comandos
+	Handle Backspaces in the buffers
